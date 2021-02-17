@@ -15,5 +15,12 @@
         "psr-4": {
             "TeamPro\\TranslateScanner\\": "src/"
         }
-    }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TeamPro\\TranslateScanner\\TranslateScannerServiceProvider"
+            ]
+        }
+    },
 }
