@@ -1,0 +1,19 @@
+{
+    "name": "teampro/language-translation-scanner",
+    "description": "An elegant way to scan all text of blade files and send to database them.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TeamPro",
+            "email": "teamprodevs@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "TeamPro\\TranslateScanner\\": "src/"
+        }
+    }
+}
