@@ -11,10 +11,16 @@ class TranslateScannerServiceProvider extends ServiceProvider{
         $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
         $this->mergeConfigFrom(__DIR__ . '/config/translation.php', 'translation');
         $this->publishes([__DIR__ . '/config/translation.php' => config_path('translation.php')]);
+        $this->publishes([
+            __DIR__.'/views' => base_path('resources/views'),
+        ]);
+        // $this->publishes([
+        //     __DIR__.'/../public' => public_path('vendor/courier'),
+        // ], 'public');
     }
 
     public function register(){
-
+        $this->app->make('TeamPro\TranslateScanner\Http\Contollers\TranslateController');
     }
 
 }
