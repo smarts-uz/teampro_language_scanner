@@ -19,9 +19,9 @@ class TranslateScannerServiceProvider extends ServiceProvider{
         // ], 'public');
     }
 
-    public function register(){
-        $this->app->make('TeamPro\TranslateScanner\Http\Contollers\TranslateController');
-    }
+    // public function register(){
+    //     $this->app->make('TeamPro\TranslateScanner\Http\Contollers\TranslateController');
+    // }
 
 }
 
