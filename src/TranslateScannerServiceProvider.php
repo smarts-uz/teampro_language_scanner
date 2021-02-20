@@ -10,13 +10,26 @@ class TranslateScannerServiceProvider extends ServiceProvider{
         $this->loadViewsFrom(__DIR__ . '/views', 'translation'); // if you created translation.blade.php
         $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
         $this->mergeConfigFrom(__DIR__ . '/config/translation.php', 'translation');
-        $this->publishes([__DIR__ . '/config/translation.php' => config_path('translation.php')]);
-        $this->publishes([
-            __DIR__.'/views' => base_path('resources/views'),
-        ]);
-        // $this->publishes([
-        //     __DIR__.'/../public' => public_path('vendor/courier'),
-        // ], 'public');
+
+        $this->publishes(
+            [
+                __DIR__.'/views' => base_path('resources/views'),
+            ]);
+
+        $this->publishes(
+            [
+                __DIR__.'/database/migrations' => database_path('migrations'),
+            ], 'migrations');
+
+        $this->publishes(
+            [
+                __DIR__.'/Http/Controllers' => base_path('app/Http/Controllers'),
+            ]);
+
+        $this->publishes(
+            [
+                __DIR__.'/config/translation.php' => config_path('translation.php')
+            ], 'config');
     }
 
     // public function register(){
