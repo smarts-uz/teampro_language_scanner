@@ -2,10 +2,18 @@
 
 namespace TeamPro\TranslateScanner;
 use Illuminate\Support\ServiceProvider;
+use TeamPro\TranslateScanner\Commands\TranslationScanner;
 
 class TranslateScannerServiceProvider extends ServiceProvider{
 
     public function boot(){
+
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                TranslationScanner::class,
+            ]);
+        }
+
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
         $this->loadViewsFrom(__DIR__ . '/views', 'translation'); // if you created translation.blade.php
         $this->loadMigrationsFrom(__DIR__ . '/database/migrations');

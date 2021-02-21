@@ -10,4 +10,9 @@ class Translation extends Model
     use HasFactory;
 
     protected $guarded = [];
+    protected $fillable=[
+        'lang',
+        'lang_key',
+        'lang_value',
+      ];
 }
