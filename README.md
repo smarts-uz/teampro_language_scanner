@@ -6,4 +6,4 @@
 ### [ ...
 ### TeamPro\TranslateScanner\TranslateScannerServiceProvider::class,
 ### ]
-### Do    php artisan migrate   and   scan it with     php artisan scan:translation   in cmd.
+### Do  ---  php artisan migrate ---  and   scan it with    --- php artisan scan:translation ---  in cmd.
