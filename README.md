@@ -9,4 +9,4 @@
 
 ### For finding texts use --- composer require nette/finder ---
 ### Do  ---  php artisan migrate ---  and   scan it with    --- php artisan scan:translation ---  in cmd.
-## All formats of text must be --- t("your text here") --- in .blade.php files. For example: <p>t("your any texts here")</p>, it may contain any tag which has t("your text here").
+## All formats of text must be --- t("your text here") --- in .blade.php files. For example: <p>t("your any texts here")</p> it may contain any tag which has t("your text here").
