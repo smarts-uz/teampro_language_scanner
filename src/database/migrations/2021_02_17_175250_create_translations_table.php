@@ -19,7 +19,7 @@ class CreateTranslationsTable extends Migration
             $table->text('lang_key')->nullable();
             $table->text('lang_value')->nullable();
             $table->timestamp('created_at')->useCurrent();
-            $table->timestamp('updated_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent(); 
         });
     }
 
