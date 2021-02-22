@@ -5,7 +5,7 @@
 ### <p style="color: blue;">composer require teampro/language-translation-scanner</p>
 
 ### You should place it in config/app.php ===> 'providers' => 
-### [ ...
+### 'providers' => [ ...
 ###           TeamPro\TranslateScanner\TranslateScannerServiceProvider::class,
 ### ]
 
