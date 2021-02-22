@@ -2,6 +2,8 @@
 
 ## An elegant way to scan all text of blade files and send to database them.
 
+### composer require teampro/language-translation-scanner
+
 ### You should place it in config/app.php ===> 'providers' => 
 ### [ ...
 ###           TeamPro\TranslateScanner\TranslateScannerServiceProvider::class,
